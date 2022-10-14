@@ -1,0 +1,68 @@
+<div id="cabecalho">
+<img src="../../../assets/bemvindoaobiai.png">
+</div>
+
+<mat-sidenav-container>
+
+  <img src="/src/assets/fundo.png">
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+ <!-- <img
+  class="avatar mat-elevation-z8"
+  src="../../../assets/bob.jpg"
+  alt="Bob"
+ />
+
+ <h4 class="name">Bob</h4> -->
+
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/editoras">
+      <mat-icon>border_color</mat-icon>
+      <span>Editoras</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/assuntos">
+      <mat-icon>subject</mat-icon>
+      <span>Assuntos</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/idiomas">
+      <mat-icon>title</mat-icon>
+      <span>Idiomas</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/autores">
+      <mat-icon>person</mat-icon>
+      <span>Autores</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/livros">
+      <mat-icon>menu_book</mat-icon>
+      <span>Livros</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/about">
+      <mat-icon>person_add</mat-icon>
+      <span>Usuários</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/about">
+      <mat-icon>task</mat-icon>
+      <span>Reservas</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/help">
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

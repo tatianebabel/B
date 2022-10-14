@@ -1,0 +1,86 @@
+mat-toolbar {
+  background: #ecedea;
+  color: rgb(183, 183, 183);
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #ffdf2b;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  font-style:oblique;
+
+}
+
+.content {
+  height: calc(100vh - 130px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  padding: 16px;
+
+
+  overflow: auto;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+  background-image: url("/src/assets/fundo.png");
+
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  line-height: 36px;
+  padding: 0 16px;
+  color: inherit;
+  cursor: pointer;
+  overflow: visible;
+
+  mat-icon {
+    margin-right: 8px;
+  }
+
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: rgb(169, 12, 12);
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+ // background-color: rgba(235, 0, 0, 0.5);
+}
+#cabecalho{
+  width: 397px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+}

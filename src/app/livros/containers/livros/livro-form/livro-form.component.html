@@ -1,0 +1,81 @@
+<mat-card>
+  <mat-toolbar>Detalhes do Livro</mat-toolbar>
+  <mat-card-content>
+    <form [formGroup]="form" class="min-width">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Nome" formControlName="nome" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo nome não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="ISBN" formControlName="isbn" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo ISBN não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Título Principal" formControlName= "titulo" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo principal não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Formas Variantes do Livro" formControlName="variantes" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo formas variantes não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Número edição" formControlName="edicao" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo edição não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Descrição" formControlName="descricao" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo descrição não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Status" formControlName="status" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo status não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Assunto" formControlName="assunto" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo assunto não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Editora" formControlName="editora" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo editora não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Autor" formControlName="autor" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo autor não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Idioma" formControlName="Idioma" required />
+        <mat-error *ngIf="form.invalid"
+          >Campo idioma não pode ser vazio.</mat-error >
+      </mat-form-field>
+
+
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">
+      Salvar
+    </button>
+    <button mat-raised-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
